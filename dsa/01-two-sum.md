@@ -64,7 +64,8 @@ class Solution:
              if diff in hashMap:
                 return [hashMap[diff], i]
              hashMap[nums[i]] = i
-
+TIME COMPLEXITY : O(n)
+SPACE COMPLEXITY : O(n)
 
   
     
