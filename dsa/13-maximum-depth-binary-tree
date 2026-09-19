@@ -1,0 +1,16 @@
+Pyhtone code:
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    if root is None:
+         return 0
+    m = self.maxDepth(root.left)
+    n = self.maxDepth(root.right)
+
+    return max(m,n) + 1
+
+algorithm:
+in this problem we were given to find out the maximum depth of the given binary tree 
+so we have to caluculate the subtree to the node 
+for that we use recursive function which calls out the no. of nodes present in the each subtree
+maxDepth is used to bring out the maximum length of the subtree and out of both left and right subtree we want the maximum value 
+and finally + 1 is added to the max value returned such that current node is included
